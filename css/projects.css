@@ -1,0 +1,46 @@
+.projects{
+    padding: 2em 0;
+}
+
+.projects > .container{
+    gap: 2em;
+}
+
+.card{
+    border-radius: 1em;
+    padding: 1em;
+    flex: 1;
+    font-weight: 500;
+    box-shadow: 
+        0.35em 0.35em 0.75em rgba(0, 0, 0, 0.75), 
+        -0.1em -0.1em 0.5em #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(5rem);
+    opacity: 0;
+}
+
+.card:nth-child(2){
+    background-color: var(--secondary);
+    color: var(--dominant);
+}
+
+.card:nth-child(1),
+.card:nth-child(3){
+    background-color: var(--accent);
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container{
+        width: 50%;
+    }
+    .card{
+        width: 75%;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

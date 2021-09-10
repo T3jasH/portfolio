@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby</title>
+    <link rel="stylesheet" href="./css/index.css" > 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <nav>
+        <h1>
+         Toby
+        </h1>
+        <div class="nav-container">
+            <a href="#home" class="active-link">
+                Home
+            </a>
+            <a href="#about">
+                About Me
+            </a>
+            <a href="#projects">
+                Projects
+            </a>
+            <a href="#contact">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="home" id="home">
+            <img src="./assets/maleAvatar.svg" class="avatar"/>
+            <h1>
+                Hi, I am Toby
+            </h1>
+            <h1>
+                I am a <span class="shadow-effect" >Web Developer</span>
+            </h1>
+            <div class="socials">
+                <a href="https://github.com/T3jasH" >
+                    <img src="assets/github.svg" />
+                </a>
+                <a href="https://github.com/T3jasH" >
+                    <img src="assets/linkedIn.svg" />
+                </a>
+                <a href="https://github.com/T3jasH" >
+                    <img src="assets/dribble.svg" />
+                </a>
+            </div>
+            <div class="scroll-wrapper">
+                <div class="scroll-down-container">
+                    <div class="arrow-container">
+                        <div class="down-arrow"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="shadow-effect">
+                About Me
+            </h1>
+            <div class="container">
+                <div class="img-container">
+                    <img src="./assets/maleAvatar.svg" class="avatar"/>
+                </div>
+                <div class="text-section">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi iste obcaecati repellendus. Mollitia deleniti sed culpa quas omnis quae, velit dicta facilis? Praesentium, asperiores.
+                    <div class="skills-container">
+                        <span class="skill">
+                            HTML
+                        </span>
+                        <span class="skill">
+                            CSS
+                        </span>
+                        <span class="skill">
+                            REACT
+                        </span>
+                        <span class="skill">
+                            DOCKER
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1 class="shadow-effect" >Projects</h1>
+            <div class="container">
+            <div class="card">
+                <h2>
+                    Project 1
+                </h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus laudantium non accusantium amet corrupti ducimus, dignissimos in? Mollitia, quam!     
+                </p>
+            </div>
+            <div class="card">
+                <h2>
+                    Project 2
+                </h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus, deleniti porro quos veniam quasi.
+                </p>
+            </div>
+            <div class="card">
+                <h2>
+                    Project 3
+                </h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam praesentium in? Neque accusamus labore numquam magni accusantium iste in, officia suscipit voluptatum aut! Voluptatem!
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="shadow-effect">
+                Contact Me
+            </h1>
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Your Name" >
+                    <input type="text" placeholder="Email" >
+                </div>
+                <textarea placeholder="Message" >
+                </textarea>
+                <input type="submit" value="Send" >
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript" src="./js/navbar.js" ></script>
+    <script type="text/javascript" src="./js/intersectionObserver.js" ></script>
+</body>
+</html>

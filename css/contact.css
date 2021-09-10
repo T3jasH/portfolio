@@ -1,0 +1,81 @@
+.contact{
+    padding: 2em 0 4em 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 1.5em;
+    align-items: center;
+}
+
+form > .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input, 
+textarea {
+    background-color: var(--dominant);
+    color: var(--secondary);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 1s;
+}
+
+textarea{
+    border-radius: 2em;
+    height: 8em;
+    resize: none;
+    padding: 1em;
+    width: calc(100% - 2em);
+    box-shadow: 
+        0.35em 0.35em 0.75em rgba(0, 0, 0, 0.75), 
+        -0.1em -0.1em 0.5em #fff;
+    opacity: 0;
+    transform: translateY(25%);
+}
+
+input{
+    height: 2em;
+    border-radius: 1em;
+    padding: 0.5em;
+    box-shadow: 
+        -0.15em -0.15em 0.5em rgba(255, 255, 255, 0.6),
+        0.35em 0.35em 0.65em rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+
+input[type="text"]{
+    width: 45%;
+}
+
+input[type="text"]:nth-child(odd){
+    transform: translateX(-10%);
+}
+
+input[type="text"]:nth-child(even){
+    transform: translateX(10%);
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    width: 25%;
+    position: relative;
+    transform: translateY(100%);
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    letter-spacing: 0.1em;
+}
+
+input[type="submit"]:active{
+    color: var(--accent);
+}
+
+

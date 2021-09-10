@@ -1,0 +1,97 @@
+@import "navbar.css";
+@import "home.css";
+@import "about.css";
+@import "projects.css";
+@import "contact.css";
+
+:root{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    --dominant: #8200d9;
+    --secondary: #dfdfdf;
+    --accent: #f54248;
+    color: var(--secondary);
+}
+
+body{
+    background-color: var(--dominant);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10em;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.fadeIn{
+    animation: fadeInAnimation 1.5s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to{
+        opacity: 1;
+        transform: translateY(0rem) translateX(0rem);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    :root{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    main{
+        padding: 0 6em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    main{
+        padding: 0 2em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    :root{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root{
+        letter-spacing: 0.05em;
+    }
+}
