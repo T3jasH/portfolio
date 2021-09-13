@@ -33,9 +33,7 @@ textarea{
     resize: none;
     padding: 1em;
     width: calc(100% - 2em);
-    box-shadow: 
-        0.35em 0.35em 0.75em rgba(0, 0, 0, 0.75), 
-        -0.1em -0.1em 0.5em #fff;
+    box-shadow: var(--shadow);
     opacity: 0;
     transform: translateY(25%);
 }
@@ -44,9 +42,7 @@ input{
     height: 2em;
     border-radius: 1em;
     padding: 0.5em;
-    box-shadow: 
-        -0.15em -0.15em 0.5em rgba(255, 255, 255, 0.6),
-        0.35em 0.35em 0.65em rgba(0, 0, 0, 0.8);
+    box-shadow: var(--shadow);
     opacity: 0;
 }
 

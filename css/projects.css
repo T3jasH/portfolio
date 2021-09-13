@@ -7,34 +7,45 @@
 }
 
 .card{
+    position: relative;
+    background-color: var(--dominant);
     border-radius: 1em;
     padding: 1em;
     flex: 1;
     font-weight: 500;
-    box-shadow: 
-        0.35em 0.35em 0.75em rgba(0, 0, 0, 0.75), 
-        -0.1em -0.1em 0.5em #fff;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 500ms;
     transform: translateY(5rem);
     opacity: 0;
 }
 
-.card:nth-child(2){
-    background-color: var(--secondary);
-    color: var(--dominant);
+.card:hover{
+    box-shadow: var(--shadowRaised);
 }
 
-.card:nth-child(1),
-.card:nth-child(3){
-    background-color: var(--accent);
+.card::before{
+    content: '</>';
+    position: absolute;
+    font-size: 0.75em;
+    color: #b5b1b1;
+    bottom: 0.5em;
+    right: 0.5em;
 }
+
+.card::after{
+    content: '<>';
+    position: absolute;
+    font-size: 0.75em;
+    color: #b5b1b1;
+    top: 0.5em;
+    left: 0.5em;
+}
+
 
 @media screen and (max-width: 600px) {
-    .skills-container{
-        width: 50%;
-    }
     .card{
         width: 75%;
     }

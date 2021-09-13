@@ -1,20 +1,76 @@
 .home{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.home > .column{
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+}
+
+.column > h1{
     position: relative;
-    padding-top: 5rem;
+}
+
+.column h1::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--dominant);
+}
+
+.column h1:nth-child(2)::after  {
+    animation: typewriter 1s steps(21) forwards;
+}
+
+.column h1:nth-child(3)::after {
+    animation: typewriter 1s steps(13) forwards 1s;
+}
+
+.code{
+    position: relative;
+    font-size: 0.5em;
+    font-family: 'Source Code Pro', monospace;
+    display: block;
+}
+
+.code::first-letter{
+    font-size: 1em;
+}
+
+.code::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--dominant);
+    animation: coding 1s steps(50) forwards;
+}
+
+@keyframes coding {
+    100%{
+        top: 100%;
+    }
+}
+
+@keyframes typewriter {
+    to{
+        left: 100%;
+    }
 }
 
 .avatar {
-    width: 7rem;
-    height: 7rem;
+    width: var(--diameter);
+    height: var(--diameter);
     border-radius: 50%;
-    background-color: var(--secondary);
-    box-shadow:
-        0.25rem 0.25rem 0.8em -0.35em #000, 
-        -0.25rem -0.25em 0.8rem -0.25em  #eee; 
+    background-color: var(--accent);
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--shadow);
 }
 
 

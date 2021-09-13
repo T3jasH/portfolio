@@ -3,13 +3,21 @@
 @import "about.css";
 @import "projects.css";
 @import "contact.css";
+@import "skill-section.css";
 
 :root{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    --dominant: #8200d9;
-    --secondary: #dfdfdf;
-    --accent: #f54248;
+    --dominant: #353A40;
+    --secondary: #efefef;
+    --accent: #005EA3;
+    --shadow: 
+    0.25rem 0.25rem 0.50em rgba(0, 0, 0, 0.75), 
+    -0.1rem -0.1em 0.25rem rgba(255, 255, 255, 0.5);
+    --shadowRaised: 
+    0.45rem 0.45rem 0.750em rgba(0, 0, 0, 0.9), 
+    -0.15rem -0.15em 0.35rem rgba(255, 255, 255, 0.7);
+    --diameter: 7em;
     color: var(--secondary);
 }
 

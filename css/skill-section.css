@@ -1,0 +1,90 @@
+.skills-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    width: 15%;
+    height: 7.5em;
+    border-radius: 1em;
+    box-shadow: var(--shadow);
+}
+
+.skill:hover{
+    box-shadow: var(--shadowRaised);
+}
+
+.fab{
+    font-size: 2.5em;
+}
+
+.level{
+    --beginner: 25%;
+    --intermediate: 50%;
+    --skilled: 75%;
+    --expert: 100%;
+    --fillSpeed: 1s;
+    position: relative;
+    width: 90%;
+    font-size: 0.8rem;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--secondary);
+    text-align: center;
+}
+
+.level::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    right: 100%;
+    border-radius: 0.5em;
+    background-color: var(--secondary);
+    mix-blend-mode: difference;
+}
+
+.skill:nth-child(5) > .level::before{
+    animation: levelBeg var(--fillSpeed) forwards;
+}
+.skill:nth-child(2)> .level::before,
+.skill:nth-child(4) > .level::before {
+    animation: levelInterm var(--fillSpeed) forwards;
+}
+
+.skill:nth-child(1) > .level::before,
+.skill:nth-child(3) > .level::before{
+    animation: levelSki var(--fillSpeed) forwards;
+}
+
+@keyframes levelBeg {
+    to{
+        right: calc(100% - var(--beginner));
+    }
+}
+
+@keyframes levelInterm {
+    to{
+        right: calc(100% - var(--intermediate));
+    }
+}
+
+@keyframes levelSki {
+    to{
+        right: calc(100% - var(--skilled));
+    }
+}
+
+@keyframes levelExp {
+    to{
+        right: calc(100% - var(--expert));
+    }
+}

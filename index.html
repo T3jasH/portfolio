@@ -7,38 +7,27 @@
     <title>Toby</title>
     <link rel="stylesheet" href="./css/index.css" > 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/70f90b347a.js" crossorigin="anonymous" async></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <nav>
         <h1>
-         Toby
+            toby
         </h1>
-        <div class="nav-container">
-            <a href="#home" class="active-link">
-                Home
-            </a>
-            <a href="#about">
-                About Me
-            </a>
-            <a href="#projects">
-                Projects
-            </a>
-            <a href="#contact">
-                Contact Me
-            </a>
-        </div>
     </nav>
     <main>
         <div class="home" id="home">
+            <div class="column">
             <img src="./assets/maleAvatar.svg" class="avatar"/>
             <h1>
                 Hi, I am Toby
             </h1>
             <h1>
-                I am a <span class="shadow-effect" >Web Developer</span>
+                I am a Web Developer
             </h1>
             <div class="socials">
                 <a href="https://github.com/T3jasH" >
@@ -47,20 +36,52 @@
                 <a href="https://github.com/T3jasH" >
                     <img src="assets/linkedIn.svg" />
                 </a>
-                <a href="https://github.com/T3jasH" >
-                    <img src="assets/dribble.svg" />
-                </a>
             </div>
-            <div class="scroll-wrapper">
-                <div class="scroll-down-container">
-                    <div class="arrow-container">
-                        <div class="down-arrow"></div>
-                </div>
-                </div>
             </div>
+            <pre class="code">
+                &lt;!DOCTYPE html&gt; 
+                &lt;html lang="en"&gt; 
+                &lt;head&gt; 
+                    &lt;title&gt; Toby&lt;/title&gt; 
+                &lt;/head&gt; 
+                &lt;body&gt; 
+                    &lt;main&gt; 
+                        &lt;div class="home" id="home"&gt; 
+                            &lt;img src="" class="avatar"/&gt; 
+                            &lt;div class="socials"&gt; 
+                            &lt;/div&gt; 
+                        &lt;/div&gt; 
+                        &lt;div class="about" id="about"&gt; 
+                            &lt;div class="container"&gt; 
+                            &lt;div class="img-container"&gt; 
+                                &lt;img src="" class="avatar"/&gt; 
+                            &lt;/div&gt; 
+                            &lt;div class="text-section"&gt; 
+                                &lt;div class="skills-container"&gt; 
+                                &lt;/div&gt; 
+                            &lt;/div&gt; 
+                            &lt;/div&gt; 
+                        &lt;/div&gt; 
+                        &lt;div class="projects" id="projects"&gt; 
+                            &lt;h1&gt; Projects&lt;/h1&gt; 
+                                &lt;div class="container"&gt; 
+                                    &lt;div class="card"&gt; 
+                                    &lt;/div&gt;
+                                    &lt;div class="card"&gt; 
+                                    &lt;/div&gt;
+                                    &lt;div class="card"&gt; 
+                                    &lt;/div&gt; 
+                                &lt;/div&gt; 
+                        &lt;/div&gt; 
+                        &lt;div class="contact" id="contact"&gt; 
+                        &lt;/div&gt; 
+                    &lt;/main&gt; 
+                &lt;/body&gt; 
+                &lt;/html&gt; 
+            </pre>
         </div>
         <div class="about" id="about">
-            <h1 class="shadow-effect">
+            <h1>
                 About Me
             </h1>
             <div class="container">
@@ -69,25 +90,43 @@
                 </div>
                 <div class="text-section">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi iste obcaecati repellendus. Mollitia deleniti sed culpa quas omnis quae, velit dicta facilis? Praesentium, asperiores.
-                    <div class="skills-container">
-                        <span class="skill">
-                            HTML
-                        </span>
-                        <span class="skill">
-                            CSS
-                        </span>
-                        <span class="skill">
-                            REACT
-                        </span>
-                        <span class="skill">
-                            DOCKER
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="skill-section">
+            <h2>
+                Skills
+            </h2>
+            <div class="skills-container">
+                <span class="skill">
+                    <i class="fab fa-html5"></i>
+                    HTML
+                    <span class="" > SKILLED </span>
+                </span>
+                <span class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS
+                    <span class=""> INTERMEDIATE </span>
+                </span>
+                <span class="skill">
+                    <i class="fab fa-js"></i>
+                    JAVASCRIPT
+                    <span class=""> SKILLED </span>
+                </span>
+                <span class="skill">
+                    <i class="fab fa-react"></i>
+                    REACT
+                    <span class=""> INTERMEDIATE </span>
+                </span>
+                <span class="skill">
+                    <i class="fab fa-docker"></i>
+                    DOCKER
+                    <span class=""> BEGINNER </span>
+                </span>
+            </div>
+        </div>
         <div class="projects" id="projects">
-            <h1 class="shadow-effect" >Projects</h1>
+            <h1>Projects</h1>
             <div class="container">
             <div class="card">
                 <h2>
@@ -116,7 +155,7 @@
         </div>
         </div>
         <div class="contact" id="contact">
-            <h1 class="shadow-effect">
+            <h1>
                 Contact Me
             </h1>
             <form>

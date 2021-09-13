@@ -1,16 +1,14 @@
 nav {
-    position: sticky;
+    position: relative;
     z-index: 2;
     top: 0;
-    background-color: var(--secondary);
-    padding: 1em 0em;
+    padding: 1.5em;
 }
 
-nav > h1{
-    color: var(--accent);
-    position: absolute;
-    left: 1.5rem;
+nav h1{
+    color: #fff;
 }
+
 
 .nav-container{
     display: flex;

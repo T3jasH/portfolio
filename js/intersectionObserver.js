@@ -25,20 +25,29 @@ const slideIn = new IntersectionObserver((entries, slideIn) => {
     })
 }, {rootMargin : "-30% 0px 0px 0px", threshold: 0.5})
 
+const levelUp = new IntersectionObserver((entries, levelUp) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("level")
+        }
+    })
+}, {rootMargin : "-30% 0px 0px 0px", threshold: 0.5})
+
 document.onreadystatechange = () => {
     if(document.readyState === "interactive"){
         const cards = document.querySelectorAll(".card")
         cards.forEach(card => {
             fadeIn.observe(card)
         })
-        const downArrow = document.querySelector(".scroll-down-container")
-        toggleDownArrow.observe(downArrow)
         const imgContainer = document.querySelector(".img-container")
         const textSection = document.querySelector(".text-section")
         slideIn.observe(imgContainer)
         slideIn.observe(textSection)
-        document.querySelectorAll(".skill").forEach(skill => slideIn.observe(skill))
         document.querySelectorAll("input").forEach(input => slideIn.observe(input))
+        document.querySelectorAll(".skill > span")
+            .forEach(span => {
+                levelUp.observe(span)
+            })
         slideIn.observe(document.querySelector("textarea"))
 
     }
